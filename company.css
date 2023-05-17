@@ -1,0 +1,52 @@
+:root{
+    --primary-color: #283E51;
+    --accent-color: #17AC9D;
+}
+.navigation__item--company{
+    padding-bottom: 15px;
+    border-bottom: 4px solid #17AC9D;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.main h1{
+    font-family: "Butler-Medium";
+    font-weight:100;
+    font-size: 100px;
+    color: var(--primary-color);
+    margin-bottom: 70px
+}
+.main h5{
+    font-family: "Rockness-Regular";
+    font-weight: 100;
+    color: var(--accent-color);
+    font-size: 93px;
+    margin: 0;
+    margin-bottom: 40px
+
+}
+.main p{
+    font-family: "Butler-Light";
+    font-size: 35px;
+    text-align: center;
+    width: 1090px;
+}
+.main__content{
+    width: fit-content;
+    height: auto;
+    box-shadow: 0px 0px 50px #67859E26;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 90px 50px 150px 50px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+.main__content p{
+    font-size: 20px;
+    text-align: left;
+    font-family: "Gilroy-Regular";
+}

@@ -1,0 +1,246 @@
+:root{
+    --primary-color: #17AC9D;
+}
+
+@font-face {
+    font-family: "Rockness-Regular";
+    src: url("fonts/Rockness.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("fonts/Gilroy-Bold.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("fonts/Gilroy-Medium.woff");
+}
+@font-face {
+    font-family: "Butler-Light";
+    src: url("fonts/Butler_Light.woff");
+}
+@font-face {
+    font-family: "Butler-Medium";
+    src: url("fonts/Butler_Medium.woff");
+}
+@font-face {
+    font-family: "Butler-Ultra-Light";
+    src: url("fonts/Butler_Ultra_Light.woff");
+}
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("fonts/Gilroy-Bold.woff");
+}
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("fonts/Gilroy-Regular.woff");
+}
+@font-face {
+    font-family: "Gilroy-Extrabold";
+    src: url("fonts/Gilroy-Extrabold.woff");
+}
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url("fonts/Gilroy-Light.woff");
+}
+@font-face {
+    font-family: "Gilroy-UltraLight";
+    src: url("fonts/Gilroy-UltraLight.woff");
+}
+
+@font-face {
+    font-family: "Gilroy-Thin";
+    src: url("fonts/Gilroy-Thin.woff");
+}
+@font-face {
+    font-family: "Butler-Light";
+    src: url("fonts/Butler_Light.woff");
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+nav{
+    height:35rem;
+    background-color:var(--primary-color) ;
+    padding-top: 2%;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    margin: 0% 10% 2% 7%;
+    justify-content: space-between;
+    font-family: "Gilroy-Regular";
+    font-size: 20px;
+    color: white;
+}
+.navigation__logo{
+    filter: brightness(0) invert(1);}
+
+.navigation__items{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+}
+.navigation__items a{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.navigation_
+a:hover{
+    cursor: pointer;
+}
+.navigation__main{
+    position: relative;
+}
+.navigation__lang{
+    box-sizing: border-box;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:13%;
+}
+.navigation__shapes>:first-child{
+    position: relative;
+    left: 25%;
+    top: 50%;
+    margin-left: -15%;
+    height: 210px;
+}
+.navigation__shapes{
+    position: absolute;
+}
+.navigation__shapes>:nth-child(2){
+   height: 350px;
+}
+.navigation__title{
+    margin: 0;
+    font-family: "Rockness-Regular";
+    font-size:11em;
+    color: white;
+    font-weight:100;
+    margin-top: 3%;
+    height: 165px;
+    white-space: nowrap;
+}
+.navigation__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+.navigation__text p{
+    margin: 0;
+    font-family: "Gilroy-Light";
+    color: white;
+    font-size: 42px;
+    margin-top: 2%;
+}
+.navigation__image--right{
+   position: absolute;
+   right: -140px;
+   top: 16rem;
+}
+.footer{
+    display: flex;
+    height: 35rem;
+}
+.footer__map{
+    flex: 1;
+}
+.footer__map img{
+   /* height: 100%;
+    max-width: 100%; */
+}
+.footer__meet_us{
+    display: flex;
+    flex-direction: column;
+    padding: 65px;
+    box-sizing: border-box;
+    align-items: center;
+    flex:1;
+    color: #283E51;
+}
+.footer__title{
+    font-family: "Butler-Light" ;
+    font-size: 65px;
+    font-weight:normal;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.footer__meet_us p{
+    font-family: "Gilroy-Regular";
+    font-size: 22px;
+    color: #283E51;
+}
+.footer__icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 70px;
+}
+.footer__contact_us{
+    display: flex;
+    flex-direction: column;
+    padding: 65px;
+    box-sizing: border-box;
+    align-items: center;
+    flex: 1;
+    color: #283E51;
+    background-color: #E6E6E6;
+}
+.footer__contact_us h5{
+    margin-bottom: 10px;
+}
+.footer__contact_us form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 47px;
+}
+form>:nth-child(3){
+    height: 99px;
+    padding: 15px !important;
+    resize: none;
+}
+form{
+    width: 420px;
+}
+::placeholder{
+    color: var(--primary-color);
+}
+form input, form textarea{
+    font-size: 15px;
+    color:  var(--primary-color);
+    border-radius: 14px;
+    border:none;
+    padding: 5px 15px 5px 15px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-family: "Gilroy-Regular";
+    background-color: rgba(255, 255, 255, 0.64);
+}
+form *:focus{
+    outline: none;
+}
+.form__button{
+    display: flex;
+    align-items: center;
+    font-family: "Gilroy-Bold";
+    font-size: 25px;
+    margin-top: 20px;
+}
+.form__button button{
+   border-radius: 50%;
+   cursor: pointer;
+   border: none;
+   background-color: transparent;
+   margin-right: 5px;
+}
