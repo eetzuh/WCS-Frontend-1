@@ -3,12 +3,11 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--primary-color);
-    height: 100vh;
+    height:1200px;
+    width: 100%;
     position: absolute;
-    left: 0px;
-    right: 0px;
     box-sizing: border-box;
-    padding: 1%;
+    padding: 20px;
     margin-top: 1%;
     z-index: -2;
 }
@@ -17,25 +16,28 @@
     font-size: 26px;
     color: white;
 }
-.footer__contact_us{
-    margin-top: 40px;
-    width: 280px;
-    height: 3px;
-    background-color: var(--accent-color);
+.footer__container{
+    margin-top: 30px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.footer__contact_us::before{
+.footer__container img{
+   margin-left: 35px;
+   width: 320px !important;
+}
+.footer__contact_us{
     content: "contact us";
     font-family: "Gilroy-Bold";
     color:white;
     font-size: 50px;
     margin-bottom: 10px;
+    position: absolute;
 }
 .footer__map{
     position:absolute;
-    top: 230px;
+    top: 255px;
     height: 700px;
     margin-left: 50px;
 }
@@ -70,7 +72,7 @@
     margin-left: 10px;
 }
 .footer__logo{
-    margin-top: 210px;
+    margin-top: 150px;
 }
 .footer__info{
     width: 350px;
@@ -95,7 +97,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 70px;
     font-family: "Gilroy-UltraLight";
     font-size: 20px;
     color: white;
@@ -103,6 +105,9 @@
 .footer__icons{
     display: flex;
     gap:12px;
+}
+.footer__icons img{
+    cursor: pointer;
 }
 .footer__copyright{
     position: absolute;
@@ -130,4 +135,105 @@
     border-radius: 50%;
     background-color: var(--accent-color);
     position: absolute;
+}
+@media only screen and (max-width: 1445px) {
+    .footer{
+        height:830px;
+    }
+    .footer__map{
+        top:173px;
+        width: 1100px;
+        height: auto;
+        margin-right: 5px;
+    }
+    .footer__services{
+        font-size: 20px;
+    }
+    .footer__container{
+        margin-top: 18px;
+    }
+    .footer__container img{
+        margin-left: 28px;
+        width: 230px !important;
+     }
+     .footer__contact_us{
+         content: "contact us";
+         font-family: "Gilroy-Bold";
+         color:white;
+         font-size: 35px;
+         margin-bottom: 10px;
+    }
+    .footer__message{
+        width: 370px;
+        height:50px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        display: flex;
+        padding: 11px 14px 11px 14px;
+        background-color: white;
+        margin-top: 100px;
+        font-size: 15px;
+        align-items: center;
+        z-index: 2;
+    }
+    .footer__message--point{
+        top: -25px;
+        width: 30px;
+        height: 30px;
+    }
+    .footer__map--dot{
+        width: 20px;
+        height: 20px;
+        margin-top: -15px;
+    }
+    .footer__map--dot::before{
+        width: 11px;
+        height: 11px;
+    }
+    .footer__logo{
+        margin-top: 110px;
+        width: 220px;
+    }
+    .footer__info{
+        width: 350px;
+        font-family: "Gilroy-UltraLight";
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer__info p{
+        margin: 5px;
+    }
+    .footer__info hr{
+        width: 90px;
+        height: 0px;
+        border: none;
+        border-top: 1px solid white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .footer__socials{
+        margin-top: 45px;
+        font-size: 15px;
+    }
+    .footer__icons{
+        display: flex;
+        gap:8px;
+    }
+    .footer__icons img{
+        cursor: pointer;
+        width: 32px;
+    }
+    .footer__copyright{
+        position: absolute;
+        bottom:0px;
+        font-family: "Gilroy-UltraLight";
+        color: white;
+        opacity: 50%;
+        font-size: 20px;
+    }
+    .footer__copyright{
+        font-size: 15px;
+    }
 }

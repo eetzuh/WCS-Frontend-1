@@ -3,6 +3,7 @@
     flex-direction: row;
     margin: 3% 9% 3% 9%;
     justify-content: space-between;
+    padding-bottom: 15px;
 }
 .navigation__items{
     display: flex;
@@ -23,16 +24,15 @@ a:hover{
 }
 .navigation__lang{
     box-sizing: border-box;
-     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left:13%;
-     padding: 10px;
-    border: 1px solid #67859E;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left:13%;
+    padding: 10px;
+    border: 1px solid #67859E;
     cursor: pointer;
+    /* margin-bottom: 15px; */
 }
 .navigation__lang::before{
     content: "cg";
