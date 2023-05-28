@@ -64,7 +64,7 @@ body, html{
     overflow-x: hidden;
 }
 nav{
-    height:35rem;
+    height:50vh;
     background-color:var(--primary-color) ;
     padding-top: 2%;
 }
@@ -150,7 +150,7 @@ a:hover{
 }
 .footer{
     display: flex;
-    height: 35rem;
+    height: 50vh;
 }
 .footer__map{
     flex: 1;

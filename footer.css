@@ -10,6 +10,7 @@
     box-sizing: border-box;
     padding: 1%;
     margin-top: 1%;
+    z-index: -2;
 }
 .footer__services{
     font-family: "Gilroy-UltraLight";
@@ -36,6 +37,7 @@
     position:absolute;
     top: 230px;
     height: 700px;
+    margin-left: 50px;
 }
 .footer__message{
     width: 470px;
@@ -45,21 +47,21 @@
     display: flex;
     padding: 11px 14px 11px 14px;
     background-color: white;
-    margin-top: 100px;
+    margin-top: 170px;
     font-family: "Gilroy-Regular";
     color: var(--primary-color);
     font-size: 22px;
     align-items: center;
-    position: relative;
     z-index: 2;
 }
 .footer__message--point{
-    position: absolute;
-    top: 20px;
+    position: relative;
+    top: -54px;
     width: 55px;
     height: 55px;
     transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
     background-color: white;
+    z-index: -1;
 }
 .footer__message>:first-child{
     margin-right: 20px;
@@ -119,6 +121,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -30px;
 }
 .footer__map--dot::before{
     content: "";
